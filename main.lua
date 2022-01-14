@@ -1,10 +1,6 @@
 message = 0
 
-testScores = {}
-
-testScores[1] = 95
-testScores[2] = 87
-testScores[3] = 98
+testScores = {95, 87, 98}
 
 message = testScores[2]
 
