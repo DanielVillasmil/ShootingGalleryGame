@@ -5,6 +5,7 @@ function increaseMessage(i)
 end
 
 increaseMessage(25)
+increaseMessage(5)
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(50))
