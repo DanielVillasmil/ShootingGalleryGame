@@ -3,10 +3,9 @@ condition = -25
 
 if condition > 0 then
     message = 1
-else
+elseif condition < -10 then
     message = -1
 end
-
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(50))
