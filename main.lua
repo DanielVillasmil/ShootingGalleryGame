@@ -3,8 +3,10 @@ condition = -25
 
 if condition > 0 then
     message = 1
-elseif condition < -10 then
+elseif condition < -100 then
     message = -1
+else
+    message = "no conditions met!"
 end
 
 function love.draw()
