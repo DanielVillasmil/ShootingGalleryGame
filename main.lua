@@ -8,7 +8,7 @@ while message < 100 do
 end
 
 for i = 1, 3, 1 do
-    pickle = pickle + 10
+    pickle = pickle + i
 end
 
 function love.draw()
