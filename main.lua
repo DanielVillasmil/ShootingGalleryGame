@@ -4,8 +4,12 @@ function increaseMessage(i)
     message = message + i
 end
 
-increaseMessage(25)
-increaseMessage(5)
+function double(val)
+    val = val * 2
+    return val
+end
+
+message = double(12)
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(50))
