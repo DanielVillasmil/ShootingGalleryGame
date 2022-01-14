@@ -1,8 +1,4 @@
-message = 5
-chicken = 10
-output = chicken * 3
-
-message = message - 1
+message = 0
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(50))
