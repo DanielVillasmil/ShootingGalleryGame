@@ -1,14 +1,7 @@
 message = 0
-condition = -25
 
-if condition > 0 then
-    message = 1
-elseif condition < -100 then
-    message = -1
-elseif condition == -25 then
-    message = "hello"
-else
-    message = "no conditions met!"
+while message < 10 do
+    message = message + 1
 end
 
 function love.draw()
