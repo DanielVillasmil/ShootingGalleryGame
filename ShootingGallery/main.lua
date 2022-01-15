@@ -5,13 +5,13 @@ function love.load()
     target.radius = 50
 
     score = 0
-    timer = 0
+    timer = 10
 
     gameFont = love.graphics.newFont(40)
 end
 
 function love.update(dt)
-    
+    timer = timer - dt
 end
 
 function love.draw()
@@ -22,6 +22,7 @@ function love.draw()
     love.graphics.setColor(1, 1 ,1)
     love.graphics.setFont(gameFont)
     love.graphics.print(score, 0, 0)
+    love.graphics.print(timer, 300, 0)
 
 end
 
@@ -33,7 +34,7 @@ function love.mousepressed( x, y, button, istouch, presses )
             target.x = math.random(target.radius, love.graphics.getWidth() - target.radius)
             target.y = math.random(target.radius, love.graphics.getHeight() - target.radius)
         end
-    end
+    end 
 end
 
 function distanceBetween(x1, y1, x2, y2)
