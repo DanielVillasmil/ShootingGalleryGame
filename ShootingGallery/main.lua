@@ -13,9 +13,9 @@ function love.load()
     sprites = {}
     sprites.sky = love.graphics.newImage('sprites/sky.png')
     sprites.target = love.graphics.newImage('sprites/target.png')
-    sprites.crosshairs = love.graphics.newImage('sprites/crosshairs.png')
+    sprites.crosshairs = love.graphics.newImage('sprites/sixFire2.png')
 
-    love.mouse.setVisible(false)
+    -- love.mouse.setVisible(false)
 end
 
 function love.update(dt)
@@ -45,7 +45,7 @@ function love.draw()
     if gameState == 2 then
         love.graphics.draw(sprites.target, target.x - target.radius, target.y - target.radius)
     end
-        love.graphics.draw(sprites.crosshairs, love.mouse.getX() - 20, love.mouse.getY() -20)
+        love.graphics.draw(sprites.crosshairs, love.mouse.getX() - 25, love.mouse.getY() -25)
 end
 
 function love.mousepressed( x, y, button, istouch, presses )
