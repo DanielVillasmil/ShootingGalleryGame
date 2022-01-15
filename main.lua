@@ -9,5 +9,5 @@ end
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(50))
-    love.graphics.print(testScores.subject)
+    love.graphics.print(message)
 end
