@@ -13,7 +13,9 @@ end
 function love.update(dt)
     if timer > 0 then
         timer = timer - dt
-    else
+    end
+
+    if timer < 0 then
         timer = 0
     end
 end
