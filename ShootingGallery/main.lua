@@ -35,7 +35,7 @@ function love.draw()
 
     love.graphics.setColor(1, 1 ,1)
     love.graphics.setFont(gameFont)
-    love.graphics.print(score, 0, 0)
+    love.graphics.print("Score: " .. score, 0, 0)
     love.graphics.print(math.ceil(timer), 300, 0)
 
     if gameState == 1 then
