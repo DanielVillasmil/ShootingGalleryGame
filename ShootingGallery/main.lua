@@ -8,6 +8,11 @@ function love.load()
     timer = 10
 
     gameFont = love.graphics.newFont(40)
+
+    sprites = {}
+    sprites.sky = love.graphics.newImage('sprites/sky.png')
+    sprites.target = love.graphics.newImage('sprites/target.png')
+    sprites.crosshairs = love.graphics.newImage('sprites/crosshairs.png')
 end
 
 function love.update(dt)
