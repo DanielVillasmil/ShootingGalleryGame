@@ -55,6 +55,7 @@ function love.mousepressed( x, y, button, istouch, presses )
     elseif button == 1 and gameState == 1 then
         gameState = 2
         timer = 10
+        score = 0
     end
 end
 
