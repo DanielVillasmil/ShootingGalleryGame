@@ -6,6 +6,8 @@ function love.load()
 
     score = 0
     timer = 0
+
+    gameFont = love.graphics.newFont(40)
 end
 
 function love.update(dt)
@@ -18,6 +20,7 @@ function love.draw()
     love.graphics.circle("fill", target.x, target.y, target.radius)  
 
     love.graphics.setColor(1, 1 ,1)
+    love.graphics.setFont(gameFont)
     love.graphics.print(score, 0, 0)
 
 end
