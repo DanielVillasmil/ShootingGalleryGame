@@ -38,6 +38,7 @@ function love.draw()
     love.graphics.print(math.ceil(timer), 300, 0)
 
     love.graphics.draw(sprites.crosshairs, love.mouse.getX() - 20, love.mouse.getY() -20)
+    love.graphics.draw(sprites.target, target.x, target.y)
 
 end
 
