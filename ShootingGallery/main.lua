@@ -11,7 +11,11 @@ function love.load()
 end
 
 function love.update(dt)
-    timer = timer - dt
+    if timer > 0 then
+        timer = timer - dt
+    else
+        timer = 0
+    end
 end
 
 function love.draw()
@@ -22,7 +26,7 @@ function love.draw()
     love.graphics.setColor(1, 1 ,1)
     love.graphics.setFont(gameFont)
     love.graphics.print(score, 0, 0)
-    love.graphics.print(timer, 300, 0)
+    love.graphics.print(math.ceil(timer), 300, 0)
 
 end
 
