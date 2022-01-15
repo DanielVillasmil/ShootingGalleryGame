@@ -25,6 +25,7 @@ function love.update(dt)
 
     if timer < 0 then
         timer = 0
+        gameState = 1
     end
 end
 
