@@ -35,6 +35,8 @@ function love.draw()
     love.graphics.print(score, 0, 0)
     love.graphics.print(math.ceil(timer), 300, 0)
 
+    love.graphics.draw(sprites.crosshairs, love.mouse.getX(), love.mouse.getY())
+
 end
 
 function love.mousepressed( x, y, button, istouch, presses )
