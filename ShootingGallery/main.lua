@@ -1,7 +1,7 @@
 function love.load()
     target = {}
-    target.x = 0
-    target.y = 0
+    target.x = 300
+    target.y = 300
     target.radius = 50
 end
 
