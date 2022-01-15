@@ -35,8 +35,8 @@ function love.draw()
 
     love.graphics.setColor(1, 1 ,1)
     love.graphics.setFont(gameFont)
-    love.graphics.print("Score: " .. score, 0, 0)
-    love.graphics.print(math.ceil(timer), 300, 0)
+    love.graphics.print("Score: " .. score, 5, 5)
+    love.graphics.print("Time: " .. math.ceil(timer), 300, 5)
 
     if gameState == 1 then
         love.graphics.printf("Click anywhere to begin!", 0, 250, love.graphics.getWidth(), "center")
