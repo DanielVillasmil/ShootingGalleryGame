@@ -1,14 +1,13 @@
 message = 0
 
-testScores = {}
+testScores = {95, 87, 98}
+testScores.subject = "science"
 
-table.insert(testScores, 95)
-table.insert(testScores, 87)
-table.insert(testScores, 98)
-
-message = testScores[3]
+for i,s in ipairs(testScores) do
+    message = message + s
+end
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(50))
-    love.graphics.print(message)
+    love.graphics.print(testScores.subject)
 end
