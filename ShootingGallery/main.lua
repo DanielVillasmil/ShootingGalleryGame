@@ -38,6 +38,10 @@ function love.draw()
     love.graphics.print(score, 0, 0)
     love.graphics.print(math.ceil(timer), 300, 0)
 
+    if gameState == 1 then
+        love.graphics.printf("Click anywhere to begin!", 0, 250, love.graphics.getWidth(), "center")
+    end
+
     if gameState == 2 then
         love.graphics.draw(sprites.target, target.x - target.radius, target.y - target.radius)
     end
