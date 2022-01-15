@@ -5,7 +5,7 @@ function love.load()
     target.radius = 50
 
     score = 0
-    timer = 10
+    timer = 0
     gameState = 1
 
     gameFont = love.graphics.newFont(40)
@@ -51,9 +51,9 @@ function love.mousepressed( x, y, button, istouch, presses )
             target.x = math.random(target.radius, love.graphics.getWidth() - target.radius)
             target.y = math.random(target.radius, love.graphics.getHeight() - target.radius)
         end
-    end
-    if gameState == 1 then
+    elseif button == 1 and gameState == 1 then
         gameState = 2
+        timer = 10
     end
 end
 
