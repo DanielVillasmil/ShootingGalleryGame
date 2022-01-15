@@ -6,6 +6,7 @@ function love.load()
 
     score = 0
     timer = 10
+    gameState = 1
 
     gameFont = love.graphics.newFont(40)
 
@@ -36,13 +37,14 @@ function love.draw()
     love.graphics.print(score, 0, 0)
     love.graphics.print(math.ceil(timer), 300, 0)
 
-    love.graphics.draw(sprites.target, target.x - target.radius, target.y - target.radius)
-    love.graphics.draw(sprites.crosshairs, love.mouse.getX() - 20, love.mouse.getY() -20)
-
+    if gameState == 2 then
+        love.graphics.draw(sprites.target, target.x - target.radius, target.y - target.radius)
+    end
+        love.graphics.draw(sprites.crosshairs, love.mouse.getX() - 20, love.mouse.getY() -20)
 end
 
 function love.mousepressed( x, y, button, istouch, presses )
-    if button == 1 then
+    if button == 1 and gameState == 2 then
         local mouseToTarget = distanceBetween(x, y, target.x, target.y)
         if mouseToTarget < target.radius then
             score = score + 1
