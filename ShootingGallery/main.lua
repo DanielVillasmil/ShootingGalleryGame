@@ -29,6 +29,8 @@ end
 
 function love.draw()
     -- If copy RGB divide each value by 255
+    love.graphics.draw(sprites.sky, 0, 0)
+
     love.graphics.setColor(1, 1 ,1)
     love.graphics.setFont(gameFont)
     love.graphics.print(score, 0, 0)
