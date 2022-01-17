@@ -13,9 +13,9 @@ function love.load()
     sprites = {}
     sprites.sky = love.graphics.newImage('sprites/shop.png')
     sprites.target = love.graphics.newImage('sprites/turbo.png')
-    sprites.crosshairs = love.graphics.newImage('sprites/six50.png')
+    sprites.crosshairs = love.graphics.newImage('sprites/six.png')
 
-    -- love.mouse.setVisible(false)
+    love.mouse.setVisible(false)
 end
 
 function love.update(dt)
@@ -33,7 +33,7 @@ function love.draw()
     -- If copy RGB divide each value by 255
     love.graphics.draw(sprites.sky, 0, 0)
 
-    love.graphics.setColor(1, 1 ,1)
+    love.graphics.setColor(255, 255 , 255)
     love.graphics.setFont(gameFont)
     love.graphics.print("Score: " .. score, 5, 5)
     love.graphics.print("Time: " .. math.ceil(timer), 300, 5)
