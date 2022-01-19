@@ -1,0 +1,3 @@
+[submodule "Platformer/Platformer/windfield"]
+	path = Platformer/Platformer/windfield
+	url = https://github.com/a327ex/windfield.git
